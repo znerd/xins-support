@@ -5,7 +5,6 @@ import java.io.InputStream;
 import java.io.IOException;
 import java.net.URL;
 
-import org.znerd.logdoc.internal.LogCentral;
 import org.znerd.util.log.Limb;
 import org.znerd.util.log.LogLevel;
 

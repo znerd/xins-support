@@ -2,8 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.znerd</groupId>
   <artifactId>xins-support</artifactId>
+  <packaging>pom</packaging>
   <version>0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
 
   <name>XINS Support Library</name>
   <description>Support functionality for XINS projects</description>
@@ -12,7 +12,7 @@
   <licenses>
     <license>
       <name>Revised BSD License</name>
-	  <comments>A business-friendly open source license</comments>
+      <comments>A business-friendly open source license</comments>
       <url>http://www.opensource.org/licenses/bsd-license.php</url>
       <distribution>repo</distribution>
     </license>
@@ -35,14 +35,24 @@
     </developer>
   </developers>
 
+  <modules>
+    <module>xins-support-core</module>
+  </modules>
+
   <properties>
     <maven.version>3.0.3</maven.version>
     <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
     <maven-surefire-plugin.version>2.5</maven-surefire-plugin.version>
     <junit.version>4.8.2</junit.version>
+    <znerd-util.version>0.4</znerd-util.version>
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>org.znerd</groupId>
+      <artifactId>znerd-util</artifactId>
+      <version>${znerd-util.version}</version>
+    </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-plugin-api</artifactId>
